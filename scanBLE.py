@@ -33,25 +33,9 @@ while True:
 		#print temp
 		#print "\n"
 		#print beacon
-		if ((uuid == acceptUUID_01 or uuid == acceptUUID_02) and answ != '0') :
-			print uuid
-			print answ
-
-			try :
-				url = 'http://10.5.160.206:3000/api/new'
-				#url = 'https://posttestserver.com/post.php'
-
-
-				data = {'uuid': uuid, 'answer': answ}
-				headers = {'Content-Type': 'application/json'}
-
-				data_json = json.dumps(data)
-				print data_json
-
-				r = requests.post(url, data = data_json, headers = headers)
-
-			except :
-				print "Error"		
+		#if uuid == acceptUUID_01 and answ != '0' :
+			# uuid
+			#print answ	
 
 		#else:
 			#print "I don't want you!!!"
